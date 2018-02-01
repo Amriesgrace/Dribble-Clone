@@ -1,0 +1,107 @@
+
+/* START HERE */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.social{
+	padding: 10px 10px;
+}
+.card_img_wrapper{
+	padding: 0px;
+    display: block;
+    position: relative;
+}
+.bg-grey {
+    background: #eee;
+}
+.pt-2e{
+    padding-top: 2em;
+}
+.white-overlay{
+	width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.95);
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    padding: 20px;
+    bottom: 0;
+    right: 0;
+    transition: all 1s ease;;
+}
+
+.overlay-footer{
+	position: absolute;
+	bottom: 0;
+
+}
+.width-117{
+    width:117px;
+}
+.m-col{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*tool tip styling*/				
+.box{display:none;}
+.thumb-img img{
+    width: 70px;
+    position: relative;
+    bottom: 1em;
+}
+.c-black{
+ color: #333;
+} 
+.c-grey{
+    color: #aaaaaa;
+}
+.pl-10{
+    padding-left: 10px;
+} 
+.pr-10{
+    padding-right: 10px;
+}
+img.team-logo{
+    width:30px;
+    padding: 0 5px;
+}
+.btn-follow{
+    width:120px;
+    height: 40px;
+}
+.btn-follow:hover{
+    background: #428bca;
+    color:#fff;
+}
+.ReactModal__Body--open {
+    overflow: visible;
+}
+img.team-logo{
+    width:30px;
+    padding: 0 5px;
+}
+.col-md-2 {
+    width: 20% !important;
+}
+/*tooltip styling*/
+
+
+
+
+/*Media Queries*/

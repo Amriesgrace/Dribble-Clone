@@ -1,0 +1,52 @@
+
+body{
+	font-family: Roboto, sans-serif;
+	background: #eee !important;
+}
+
+.bg-black{
+    background:#2E2E2E !important;
+}
+
+.bg-dark-black{
+    background:#212121 !important;
+}
+.width-100{
+	width:100px;
+}
+.white-text{
+	color:#fff;
+}
+.gray-text{
+	color:#ddd;
+}
+.f-20{
+	font-size:20px;
+}
+.mte-22{
+	margin-top:-22px !important;
+}
+.mt-20{
+	margin-top: 20px;
+}
+.mte-30{
+	margin-top:-30px;
+}
+.bd-black{
+	border: 1px solid !important;
+}
+.fw-md{
+	font-weight: 500;
+}
+.bg-gray{
+	background: #eee;
+}
+.bd-0{
+	border-radius:0px !important;
+}
+.bg-pink{
+	background: #ea4c89;
+}
+.width-150{
+	width:150px;
+}
