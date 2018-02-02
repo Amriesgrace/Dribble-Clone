@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Modal from 'react-modal';
+import Radium from 'radium';
 import Art from '../images/art.jpeg'
 import fish from '../images/fish.jpeg';
 import pose from '../images/pose.jpeg';
@@ -159,7 +160,7 @@ class Main extends React.Component{
             <div className="wrapper bg-grey mte-22">
                 <div className="container-fluid pt-2e">
                     <div className="row m-40">
-                        <div className="col-12 col-sm-4 col-md-2">
+                        <div className="col-xs-12 col-sm-4 col-md-2">
                             <div className="card bg-white">
                                 <Link to="" className="card_img_wrapper" id="art" 
                                     onMouseOver={this.mouseEnter} 
@@ -274,7 +275,7 @@ class Main extends React.Component{
                             </div>
                         </div>
                         {/* end first card*/}
-                        <div className="col-12 col-sm-4 col-md-2">
+                        <div className="col-xs-12 col-sm-4 col-md-2">
                             <div className="card bg-white">
                                 <Link to="" className="card_img_wrapper" id="fish">
                                     <img className="card-img p-10" src={fish} alt="Fish" />
@@ -373,7 +374,7 @@ class Main extends React.Component{
                             </div>
                         </div>
                         {/*end second card*/}
-                        <div className="col-xs-6 col-sm-4 col-md-2">
+                        <div className="col-xs-12 col-sm-4 col-md-2">
                             <div className="card bg-white">
                                 <Link to="/" className="card_img_wrapper" id="pose">
                                     <img className="card-img p-10" id="card-img" src={pose} alt="Card Pose" />
@@ -472,7 +473,7 @@ class Main extends React.Component{
                             </div>
                         </div>
                         {/*end third modal*/}
-                        <div className="col-xs-6 col-sm-4 col-md-2">
+                        <div className="col-xs-12 col-sm-4 col-md-2">
                             <div className="card bg-white">
                                 <Link to="" className="card_img_wrapper" id="hold">
                                     <img className="card-img p-10" src={hold} alt="Card Hold" />
@@ -570,7 +571,7 @@ class Main extends React.Component{
                             </div>
                         </div>
                         {/*End fourth modal*/}
-                        <div className="col-xs-6 col-sm-4 col-md-2">
+                        <div className="col-xs-12 col-sm-4 col-md-2">
                             <div className="card  bg-white">
                                 <Link to="" className="card_img_wrapper" id="crash">
                                     <img className="card-img p-10" src={crash} alt="Card cap" />
@@ -684,4 +685,4 @@ class Main extends React.Component{
     
 }
 
-export default Main;
+export default Radium(Main);

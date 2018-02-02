@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import InfiniteScroll from 'react-infinite-scroller';
 import List from './List';
 import Nav from './Nav';
 import './Nav.css';
@@ -35,10 +36,17 @@ class Designers extends React.Component{
                     })
                 }
             });
+            
     }
+    loadFunc =() =>{
+       console.log('this function');
+    }  
+
+    
     render(){
         const posts = this.state.posts.map(post => {
-            return <List 
+            return <List
+            key ={post.id}
             img={post.imageUrl}
             name={post.name}
             follow={post.followers}
@@ -58,7 +66,18 @@ class Designers extends React.Component{
                          <button className="btn btn-success">Learn More</button>
                         </p>
                     </div>
+                    <InfiniteScroll
+                        pageStart={0}
+                        loadMore ={this.loadFunc}
+                        hasMore={true}
+                        loader={<div className="loader" key={0}>Loading ...</div>}
+                        useWindow={false}
+                    >
                     { this.state.error ? 'NO NETWORK' : posts }
+                    </InfiniteScroll>
+                
+                        
+                    
                     
                     <hr/>
                 </section>

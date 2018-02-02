@@ -102,6 +102,33 @@ img.team-logo{
 /*tooltip styling*/
 
 
-
-
 /*Media Queries*/
+
+@media(max-width:500px){
+    .col-md-2{
+        
+    }
+    .col-xs-12{
+        width:100% !important;
+    }
+    .card-body h4, .card-body p{
+        display: none;
+    }
+    .row.m-40{
+        margin: 40px 10px;
+    }
+    .card{
+        margin: 10px 0;
+    }
+}
+
+@media (min-width:768px) {
+    .col-sm-4{
+        width:33.3% !important;
+    }
+}
+@media (min-width: 992px){
+    .col-md-2 {
+        width: 20% !important;
+    }
+}

@@ -55,9 +55,8 @@ const List =(props) =>{
                             </div>
                         </div>
                     </div>
-                    
+                    <hr className="hr"/>
                 </div>
-                <hr/>
             </div>
         </div>
     );

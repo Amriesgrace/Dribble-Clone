@@ -8,6 +8,10 @@ body{
     background:#2E2E2E !important;
 }
 
+.navbar-default{
+	background: #2E2E2E;
+	border: 1px solid #2E2E2E;
+}
 .bg-dark-black{
     background:#212121 !important;
 }
@@ -18,7 +22,11 @@ body{
 	color:#fff;
 }
 .gray-text{
-	color:#ddd;
+	color:#ddd !important;
+}
+.hr{
+	border: 1px solid #ddd;
+    width: 94%;
 }
 .f-20{
 	font-size:20px;

@@ -39,8 +39,11 @@ class User extends React.Component{
             return;
         }
     }
+   
+    
+    
     render(){
-        console.log(this.props);
+       // console.log(this.props);
         const lists = this.state.lists.map(list => {
             return <UserList 
             key={list.id} 
@@ -48,11 +51,18 @@ class User extends React.Component{
             img={list.imageUrl}
             />;
         });
+
+        const options = {
+            items: 3,
+            nav: true,
+            rewind: true,
+            autoplay: true
+        };
          
         return(
             <div>
                 <div className="container-fluid">
-                    <OwlCarousel>
+                    <OwlCarousel options={options}>
                         { lists }
                         
                         <img src={hold} className="h-200 p-5 mt-5 bg-white" alt="hold"/>
